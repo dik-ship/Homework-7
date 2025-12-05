@@ -53,7 +53,7 @@ public class Main {
         }
         System.out.println("Задача 7");
         int firstFriday = 5;
-        for (int day = firstFriday; day < 31; day+= 7) {
+        for (int day = firstFriday; day < 31; day += 7) {
             System.out.println("Сегодня пятница " + day + "-е. Необходимо подготовить отчет");
         }
         System.out.println("Задача 8");
