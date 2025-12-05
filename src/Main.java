@@ -20,7 +20,7 @@ public class Main {
             System.out.print( t + " ");
         }
         System.out.println();
-        int currentYear = 2024;
+
         int people = 12_000_000;
         int human = 1000;
         int birthrate = 17;
@@ -41,6 +41,7 @@ public class Main {
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
         }
+        System.out.println("Задача 6");
         deposit = 15_000;
         depositFinal = 12_000_000;
         capital = 0.07;
@@ -48,16 +49,17 @@ public class Main {
         while (deposit < depositFinal) {
             deposit += deposit * capital;
             month++;
-            if (i % 6 == 0)
+            if (month % 6 == 0)
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
         }
         System.out.println("Задача 7");
         int firstFriday = 5;
-        for (int day = firstFriday; day < 31; day += 7) {
+        for (int day = firstFriday; day <= 31; day += 7) {
             System.out.println("Сегодня пятница " + day + "-е. Необходимо подготовить отчет");
         }
         System.out.println("Задача 8");
         int period = 79;
+        int currentYear = 2024;
         int startSeeing = 0;
         int start = currentYear - 200;
         int end = currentYear + 100;
